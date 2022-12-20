@@ -33,9 +33,7 @@ function startgame() {
     cards = [firstCard, lastCard]
     sum = firstCard + lastCard;
     rendergame()
-    console.log(firstCard)
-    console.log(lastCard)
-    // console.log(rendergame())
+
 }
 function rendergame() {
 
@@ -52,16 +50,13 @@ function rendergame() {
     } else if (sum === 21) {
         message = 'woho! you got BlackJack';
         BlackJack = true;
-        console.log(BlackJack)
+
 
     } else if (sum > 21) {
         message = 'you out of the game';
         isAlive = false;
 
     }
-    console.log(BlackJack)
-    console.log(message)
-    console.log(isAlive)
     msg.textContent = message
 
 
@@ -73,28 +68,9 @@ function New() {
         let card = getrandom()
         sum += card
         cards.push(card)
-        console.log(cards)
         rendergame();
     }
 
 }
 
 
-
-
-// console.log(arr.length)
-// console.log(arr[1])
-// console.log(arr[0])
-
-// let arr = ['Junaid', 20, true]
-// console.log(arr)
-
-// let message = "I'm New Here";
-
-// arr.push(message)
-
-// console.log(arr)
-
-
-// arr.pop()
-// console.log(arr)
